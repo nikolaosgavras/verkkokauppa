@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="refresh" content="10;url=verkkokauppa.php">
+    <title>Kiitos tilauksestasi</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 100px;
+            background-color: #f0f0f0;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        #countdown {
+            font-size: 24px;
+            color: #666;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Kiitos tilauksestasi!</h1>
+        <p>Olemme vastaanottaneet tilauksesi ja käsittelemme sen pian.</p>
+        <p>Saat vahvistuksen sähköpostiisi.</p>
+        <div id="countdown">Sinut ohjataan takaisin verkkokauppaan 10 sekunnin kuluttua...</div>
+    </div>
+
+    <script>
+        let timeLeft = 10;
+        const countdownElement = document.getElementById('countdown');
+        
+        const countdown = setInterval(() => {
+            timeLeft--;
+            countdownElement.textContent = `Sinut ohjataan takaisin verkkokauppaan ${timeLeft} sekunnin kuluttua...`;
+            if (timeLeft <= 0) {
+                clearInterval(countdown);
+            }
+        }, 1000);
+    </script>
+</body>
+</html>

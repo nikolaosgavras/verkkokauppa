@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
+
+h2, p {
+    font-family: 'Poppins', sans-serif;    
+}
+
+body{
+    background-color: #f3eae3 !important;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0; /* Add this to ensure no default margins */
+    position: relative; /* Add this */
+}
+
+.main-content{
+    width: 100%;
+    color: #000000;
+    position: relative;
+    flex: 1; /* Simplify this */
+    display: flex;
+    flex-direction: column;
+    min-height: 100%; /* Add this */
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    /* padding: 1% 20%; */
+}
+nav .logo{
+    width: 25vh;
+    margin-right: 3%;
+}
+#headerButton{
+    background: #454444;
+    color: white;
+    height: 4vh;
+    width: 15vh;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(0.6vh + 0.6vw); /* Responsive font size */
+}
+
+#ostoskoriButton {
+    background: #454444;
+    color: white;
+    height: 4vh;
+    width: 15vh;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(0.6vh + 0.6vw); /* Responsive font size */
+}
+
+#kortticontainer {
+    padding-top: 30vh;
+}
+
+.card-body {
+    background-color: #f3eae3;
+}
+
+/* Remove the transform scale from .card */
+.card {
+    width: 100%;
+    height: auto; /* Ensure height is auto to adjust based on content */
+    border: 1px solid #ccc;
+    max-width: 100%;
+    box-sizing: border-box;
+    
+}
+
+.product-img {
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.form-control {
+    max-width: 100%;
+}
+
+/* Ensure the card image and body have proper styling */
+.card .card-img {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    background-color: #f3eae3;
+}
+
+.card .col-md-7 {
+    background-color: #f3eae3;
+}
+
+.card-text {
+    padding-bottom: 5vh;
+}
+
+#cardButton {
+    width: 100% !important;
+}
+
+#sortCategorySearch {
+    padding-top: 10vh;
+}
+
+.table td {
+    vertical-align: middle;
+}
+
+.quantity-select {
+    max-width: 80px;
+}
+
+footer {
+    flex-shrink: 0; /* Keep this */
+    background-color: #f3eae3 !important;
+    width: 100%;
+    margin-top: auto; /* Add this to push footer to bottom */
+    padding: 20px 0; /* Add some padding for better spacing */
+    bottom: 0; /* Add this */
+}
+
+/* Container for category selection and products */
+#categoryProductContainer {
+    border: 1px solid #ccc;
+    padding: 20px;
+    box-sizing: border-box;
+    max-width: 56%;
+}
+
+.col-md-3 {
+    flex: 0 0 25%;
+    max-width: 25%;
+}
+
+/* Add these styles to your style.css */
+
+.table {
+    border-radius: 10px;
+    overflow: hidden; /* This ensures the border-radius is visible */
+}
+
+.table thead th:first-child {
+    border-top-left-radius: 10px;
+}
+
+.table thead th:last-child {
+    border-top-right-radius: 10px;
+}
+
+.table tbody tr:last-child td:first-child {
+    border-bottom-left-radius: 10px;
+}
+
+.table tbody tr:last-child td:last-child {
+    border-bottom-right-radius: 10px;
+}
+
+/* Optional: Add a border and background for better visibility */
+.table {
+    border: 1px solid #dee2e6;
+    background-color: #fff;
+}
+
+.table tfoot {
+    border-top: 2px solid #dee2e6;
+}
+
+.table tfoot .btn {
+    min-width: 150px;
+}
+
+/* Add this to ensure containers don't create extra space */
+.container {
+    width: 100%;
+    max-width: 1200px; /* Or whatever max-width you prefer */
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Add these classes to style.css */
+.btn-success-transition {
+    animation: successFade 2s ease;
+}
+
+@keyframes successFade {
+    0% { background-color: #00ff37; border-color: #6c757d; }
+    20% { background-color: #00ff37; border-color: #198754; }
+    80% { background-color: #00ff37; border-color: #198754; }
+    100% { background-color: #6c757d; border-color: #6c757d; }
+}
