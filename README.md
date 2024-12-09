@@ -1,7 +1,7 @@
 # verkkokauppa
 koulutehtävään verkkokauppa sivusto
 
-Sivusto on tehty HTML/CSS ja PHP, sivussa käytetään Bootstrappia ja myös Custom CSS
+Sivusto on tehty HTML/CSS ja PHP, sivussa käytetään Bootstrappia ja myös Custom CSS.
 Tuotteita voi lisätä lisäämällä tuotetiedot tietokantaan, kun tuote lisätään ostoskoriin, se luo session idn ja tallentaa ostoskorin sen kanssa SQL tietokantaan.
 Kun menet ostoskoriin, voit valita monta tuotetta haluat ja poistaa tuotteita, kun painat siirry kassalle,
 idea on että se vie sinut erilliselle sivustolle maksamaan ja kirjoittamaan osoitteesi yms. esim. Shopify Checkout. 
